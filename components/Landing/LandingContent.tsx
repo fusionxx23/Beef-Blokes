@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-import Wordmark from '../public/images/Wordmark.png';
+import Wordmark from '../../public/images/Wordmark.png';
 
 
 export default function LandingContent() {

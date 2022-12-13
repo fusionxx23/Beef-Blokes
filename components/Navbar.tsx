@@ -2,17 +2,17 @@ import React from 'react'
 import beefLogo from '../public/images/BEEFY-Logo 1.png';
 import Opensea from '../public/images/Opensea.png';
 import Image from 'next/image';
-export default function Navbar() {
+export default function Navbar({bg}: {bg: boolean}) {
     return (
-        <div className='px-24 font-sniglet pt-2 flex justify-between z-10 absolute w-full' >
+        <div className='px-24 font-sniglet pt-2 flex bg-white justify-between z-10 absolute w-full' >
             <div className='flex'>
-                <Image src={beefLogo} alt='' />
+                <a href="/"><Image src={beefLogo} alt='' /></a>
                 <div className='flex items-center'>
-                    <NavLink title={'TEAM'} />
-                    <NavLink title={`FAQ's`} />
-                    <NavLink title={'ABOUT US'} />
-                    <NavLink title={'TWITTER'} />
-                    <NavLink title={'DISCORD'} />
+                    <NavLink title={'TEAM'} url={'/team'} />
+                    <NavLink title={`FAQ's`} url={'/faqs'} />
+                    <NavLink title={'ABOUT US'} url={'/about'} />
+                    <NavLink title={'TWITTER'} url={'/'} />
+                    <NavLink title={'DISCORD'} url={'/'} />
                 </div>
             </div>
 
@@ -30,9 +30,9 @@ export default function Navbar() {
     )
 }
 
-function NavLink({ title }: { title: string }) {
+function NavLink({ title, url }: { title: string, url: string }) {
     return (
-        <a href="/">
+        <a href={`${url}`}>
             <h1 className='mx-12 text-xl'>{title}</h1>
         </a>
     )
