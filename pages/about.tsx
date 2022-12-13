@@ -7,7 +7,7 @@ export default function About() {
   return (
     <div className=''>
         <Navbar bg={true}/>
-        <Info>
+        <Info height={'920px'}>
           <TeamContent/>
         </Info>
     </div>
