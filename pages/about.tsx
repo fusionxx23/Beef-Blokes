@@ -1,4 +1,4 @@
-import AboutContent from '../components/Info/AboutContent'
+import TeamContent from '../components/Info/TeamContent'
 import Info from '../components/Info/Info'
 import Navbar from '../components/Navbar'
 
@@ -8,7 +8,7 @@ export default function About() {
     <div className=''>
         <Navbar bg={true}/>
         <Info>
-          <AboutContent/>
+          <TeamContent/>
         </Info>
     </div>
   )

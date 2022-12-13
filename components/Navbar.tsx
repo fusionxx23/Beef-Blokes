@@ -4,7 +4,7 @@ import Opensea from '../public/images/Opensea.png';
 import Image from 'next/image';
 export default function Navbar({bg}: {bg: boolean}) {
     return (
-        <div className='px-24 font-sniglet pt-2 flex bg-white justify-between z-10 absolute w-full' >
+        <div className={`px-24 font-sniglet pt-2 flex ${bg ? 'bg-white' : ''} justify-between z-10 absolute w-full`} >
             <div className='flex'>
                 <a href="/"><Image src={beefLogo} alt='' /></a>
                 <div className='flex items-center'>
