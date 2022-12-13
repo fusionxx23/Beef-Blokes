@@ -4,7 +4,7 @@ import Opensea from '../public/images/Opensea.png';
 import Image from 'next/image';
 export default function Navbar({bg}: {bg: boolean}) {
     return (
-        <div className={`px-24 font-sniglet pt-2 flex ${bg ? 'bg-white' : ''} justify-between z-10 absolute w-full`} >
+        <div className={` sm:px-10 xl:px-24 font-sniglet pt-2 flex ${bg ? 'bg-white' : ''} justify-between z-10 absolute w-full`} >
             <div className='flex'>
                 <a href="/"><Image src={beefLogo} alt='' /></a>
                 <div className='flex items-center'>
@@ -33,7 +33,7 @@ export default function Navbar({bg}: {bg: boolean}) {
 function NavLink({ title, url }: { title: string, url: string }) {
     return (
         <a href={`${url}`}>
-            <h1 className='mx-12 text-xl'>{title}</h1>
+            <h1 className='sm:mx-5 xl:mx-9 text-xl'>{title}</h1>
         </a>
     )
 }
