@@ -7,7 +7,9 @@ export default function Info({ children, height }: {children: any, height: strin
             style={{ height: '100vh' }}>
             <div className='h-full' style={{
                 backgroundImage: `url(${Bg.src})`,
-                filter: 'blur(3px)', 
+                backgroundSize:'cover',
+                backgroundPosition: 'center',
+                filter: 'blur(2px)', 
                 minHeight:height
             }}>
             </div>

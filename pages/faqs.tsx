@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className=''>
       <Navbar bg={true} />
-      <Info height={'1500px'}>
+      <Info height={'1519px'}>
         <FaqsContent />
       </Info>
     </div>

@@ -5,7 +5,7 @@ import Wordmark from '../../public/images/Wordmark.png';
 
 export default function LandingContent() {
     return (
-        <div className='flex flex-col items-center h-full font-sniglet mt-10'>
+        <div className='flex flex-col items-center h-full font-sniglet mt-6'>
             <Image src={Wordmark} alt='Wordmark' />
             <h1 className='text-white font-sniglet text-2xl'>
                 1500 NFT's that embody Aussie culture, with unique Aussie traits.
