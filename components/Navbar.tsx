@@ -3,13 +3,14 @@ import beefLogo from '../public/images/BEEFY-Logo 1.png';
 import Opensea from '../public/images/Opensea.png';
 import burger from '../public/images/burger.png'; 
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Navbar({bg}: {bg: boolean}) {
     return (
         <div className={`px-4 sm:px-10 xl:px-24 font-sniglet pt-2 flex ${bg ? 'bg-white' : ''} justify-between z-10 absolute w-full`} >
             <div className='flex  sm:ml-0'>
-                <a className='hidden sm:block' href="/"><Image  width='115' src={beefLogo} alt='' /></a>
-                <a className='sm:hidden' href="/"><Image  className='w-14' src={beefLogo} alt='' /></a>
+                <Link className='hidden sm:block' href="/"><Image  width='115' src={beefLogo} alt='' /></Link>
+                <Link className='sm:hidden' href="/"><Image  className='w-14' src={beefLogo} alt='' /></Link>
                 <div className='hidden sm:flex items-center'>
                     <NavLink title={'TEAM'} url={'/team'} />
                     <NavLink title={`FAQ's`} url={'/faqs'} />

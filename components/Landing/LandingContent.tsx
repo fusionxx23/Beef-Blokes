@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import Wordmark from '../../public/images/Wordmark.png';
+import Link from 'next/link';
 
 
 export default function LandingContent() {
@@ -11,11 +12,11 @@ export default function LandingContent() {
                 <h1 className='text-white font-sniglet text-2xl'>
                     1500 NFT's that embody Aussie culture, with unique Aussie traits.
                 </h1>
-                <a href="/mint">
+                <Link href="/mint">
                     <div className='flex justify-center items-center bg-black text-white rounded-full mt-10 cursor-pointer' style={{ width: '451px', height: '107px' }}>
                         <h1 className='font-sniglet font-extrabold text-3xl'>MINT YOUR BLOKE</h1>
                     </div>
-                </a>
+                </Link>
                 <div className='mt-5 text-3xl cursor-pointer'>
                     <h1>SEE MARKETPLACE</h1>
                 </div>

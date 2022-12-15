@@ -9,7 +9,7 @@ export default function MainMobile({ children }: any) {
             height: '100vh'
         }}>
            <div className='w-full relative flex justify-center pt-6'  >
-                <Image src={Bg} height="572" alt='Background'></Image>
+                <Image src={Bg} alt='Background'></Image>
                 {/* <div className="absolute bottom-20 right-3">
                     <Image src={meatOne} alt='Background'></Image>
                 </div>
