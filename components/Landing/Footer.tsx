@@ -20,7 +20,7 @@ export default function Footer() {
                     <h1>Beefy Blokes, 2022 | All rights reserved.</h1>
                 </div>
             </div>
-            <div className='flex justify-end mt-8'>
+            <div className='flex sm:hidden justify-end mt-8'>
                 <div className='bg-black text-white px-4 py-2 rounded-tl-md'>
                     <h1 style={{fontSize:'14px'}}>Beefy Blokes, 2022 | All rights reserved.</h1>
                 </div>
