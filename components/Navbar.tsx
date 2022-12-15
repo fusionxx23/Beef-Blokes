@@ -8,7 +8,8 @@ export default function Navbar({bg}: {bg: boolean}) {
     return (
         <div className={`px-4 sm:px-10 xl:px-24 font-sniglet pt-2 flex ${bg ? 'bg-white' : ''} justify-between z-10 absolute w-full`} >
             <div className='flex  sm:ml-0'>
-                <a href="/"><Image className='w-14' src={beefLogo} alt='' /></a>
+                <a className='hidden sm:block' href="/"><Image  width='115' src={beefLogo} alt='' /></a>
+                <a className='sm:hidden' href="/"><Image  className='w-14' src={beefLogo} alt='' /></a>
                 <div className='hidden sm:flex items-center'>
                     <NavLink title={'TEAM'} url={'/team'} />
                     <NavLink title={`FAQ's`} url={'/faqs'} />
