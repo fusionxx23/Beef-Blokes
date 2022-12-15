@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import Face from '../../public/images/face.png'
+import Card from './Card';
 
 
 export default function AboutContent() {
@@ -25,15 +26,20 @@ export default function AboutContent() {
                     <p className='mb-4'>What is a Bloke?</p>
                     <p className='mb-4'>A Bloke is a commonly referred to term in Australia. Often substituted with the word man!</p>
                     <p className='mb-4'>For example, He’s an Aussie man... sounds weird right? </p>
-                    <p className='mb-4'>But he’s an Aussie Bloke. Well that fits like a glove. </p>
+                    <p className='mb-4'>But he’s an Aussie Bloke. Well that fits like a glove.</p>
                     <p className='mb-4'>Your Bloke will range from a Boxing Kangaroo to a Barbeque King. Whatever your Bloke is, it will embody you. 
                                         Some of the traits consist of illuminated glasses, wavy mullet, a bushman’s hat or a fresh meat pie.</p>
             
             </div>
-        </div>
-            <div className='flex'>
-
+            <div className='flex justify-around w-full mt-5' >
+                    <Card marginTop={'10px'}/>
+                    <Card marginTop={'100px'}/>
+                    <Card marginTop={'5px'}/>
+                    <Card marginTop={'90px'}/>
+                    <Card marginTop={'5px'}/>
             </div>
+        </div>
+            
     )
 }
 
@@ -46,7 +52,7 @@ What is a Bloke?
 A Bloke is a commonly referred to term in Australia. Often substituted with the word man!
 
 For example, He’s an Aussie man... sounds weird right? 
-But he’s an Aussie Bloke. Well that fits like a glove. 
+But he’s an Aussie Bloke. Well that fits like a glove.
 Your Bloke will range from a Boxing Kangaroo to a Barbeque King. Whatever your Bloke is, it will embody you. 
 Some of the traits consist of illuminated glasses, wavy mullet, a bushman’s hat or a fresh meat pie.
 */
