@@ -5,7 +5,7 @@ export default function FaqsContent() {
         <div className='px-56 font-sniglet mt-20 max-h-screen'>
             <div className='flex justify-between' style={{ width: '723px' }}>
                 <div className="bg-black text-white font-extrabold py-1 px-3 rounded-xl" style={{ fontSize: '33px' }}>
-                    FAQ's
+                    FAQ&apos;s
                 </div>
                 <h2 style={{ fontSize: '33px' }} >your questions</h2>
             </div>

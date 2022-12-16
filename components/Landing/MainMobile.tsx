@@ -8,8 +8,8 @@ export default function MainMobile({ children }: any) {
             background: 'linear-gradient(180deg, rgba(104, 211, 248, 0) 0%, rgba(215, 245, 255, 0.385) 91.67%, rgba(186, 237, 255, 0.42) 100%)',
             height: '100vh'
         }}>
-           <div className='w-full relative flex justify-center pt-6'  >
-                <Image src={Bg} alt='Background'></Image>
+           <div className='w-full relative flex justify-center pt-6'   >
+                <Image src={Bg} alt='Background' ></Image>
                 {/* <div className="absolute bottom-20 right-3">
                     <Image src={meatOne} alt='Background'></Image>
                 </div>

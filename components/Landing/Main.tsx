@@ -10,7 +10,7 @@ export default function Main({ children }: any) {
             minHeight:'947px', 
             height:'100vh'
         }}>
-            <div className='w-full hidden relative sm:flex justify-center px-24' style={{ maxHeight: '700px' }}>
+            <div className='w-full hidden relative sm:flex justify-center px-24' >
                 <Image src={Bg} alt='Background'></Image>
                 <div className="absolute bottom-20 right-3">
                     <Image src={meatOne} alt='Background'></Image>

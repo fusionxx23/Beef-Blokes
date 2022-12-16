@@ -10,7 +10,7 @@ export default function LandingContent() {
             <div className='hidden sm:flex flex-col items-center h-full font-sniglet mt-6'>
                 <Image src={Wordmark} alt='Wordmark' />
                 <h1 className='text-white font-sniglet text-2xl'>
-                    1500 NFT's that embody Aussie culture, with unique Aussie traits.
+                    1500 NFT&apos;s that embody Aussie culture, with unique Aussie traits.
                 </h1>
                 <Link href="/mint">
                     <div className='flex justify-center items-center bg-black text-white rounded-full mt-10 cursor-pointer' style={{ width: '451px', height: '107px' }}>
@@ -21,11 +21,11 @@ export default function LandingContent() {
                     <h1>SEE MARKETPLACE</h1>
                 </div>
             </div>
-            <div className=' sm:hidden flex flex-col items-center h-full font-sniglet mt-6 px-4'>
+            <div className='sm:hidden flex flex-col items-center h-full font-sniglet mt-6 px-4'>
                 <Image src={Wordmark} width='324' alt='Wordmark' />
                 <h1 className='text-white font-sniglet text-white text-center' 
-                style={{fontSize:'18px'}}>
-                    1500 NFT's that embody Aussie culture, with unique Aussie traits.
+                style={{fontSize:'18px', width:'310px'}}>
+                    1500 NFT&apos;s that embody Aussie culture, with unique Aussie traits.
                 </h1>
                 <a href="/mint">
                     <div className='flex justify-center items-center bg-black text-white rounded-full mt-10 cursor-pointer'
