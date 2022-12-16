@@ -40,8 +40,8 @@ export default function Navbar({bg}: {bg: boolean}) {
 
 function NavLink({ title, url }: { title: string, url: string }) {
     return (
-        <a href={`${url}`}>
+        <Link href={`${url}`}>
             <h1 className='sm:mx-5 xl:mx-9 text-xl'>{title}</h1>
-        </a>
+        </Link>
     )
 }

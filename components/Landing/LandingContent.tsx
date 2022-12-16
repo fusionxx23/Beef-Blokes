@@ -27,12 +27,12 @@ export default function LandingContent() {
                 style={{fontSize:'18px', width:'310px'}}>
                     1500 NFT&apos;s that embody Aussie culture, with unique Aussie traits.
                 </h1>
-                <a href="/mint">
+                <Link href="/mint">
                     <div className='flex justify-center items-center bg-black text-white rounded-full mt-10 cursor-pointer'
                         style={{ width: '310px', height: '60px' }}>
                         <h1 style={{ fontSize: '22px' }} className='font-sniglet font-extrabold'>MINT YOUR BLOKE</h1>
                     </div>
-                </a>
+                </Link>
                 <div style={{fontSize:'22px'}} className='mt-5 text-3xl cursor-pointer'>
                     <h1>SEE MARKETPLACE</h1>
                 </div>
