@@ -30,7 +30,7 @@ function FAQ({ title }: { title: string }) {
     const [open, setOpen] = useState(false);
     return (
         <div className='border-t border-black py-4'>
-            <div className='flex justify-between'>
+            <div className='flex justify-between items-center'>
                 <h1  className='font-extrabold 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl text-xl'>{title}?</h1>
                 {!open && <h1 onClick={() => { setOpen(true) }} style={{ fontSize: '45px' }} className={'cursor-pointer'} >+</h1>}
                 {open && <h1 onClick={() => { setOpen(false) }} style={{ fontSize: '45px' }} className={'cursor-pointer'} >x</h1>}
