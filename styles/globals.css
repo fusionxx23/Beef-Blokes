@@ -24,3 +24,9 @@
         min-height: 1050px;
     }
 }
+
+@media (min-width: 1700px) {
+    .marginT {
+        margin-top: 70px
+    }
+}

@@ -8,20 +8,20 @@ export default function Footer() {
                     <h1>Your Blake will range from a Boxing Kangaroo to a Barbeque King.</h1>
                     <h1>Whatever your Bloke is, it will embody YOU.</h1>
                 </div>
-                <div className='hidden sm:block'>
+                <div className='hidden md:block'>
                     <StayBeefy/>
                     <StayBeefy/>
                     <StayBeefy/>
                 </div>
             </div>
             {/* Mobile */}
-            <div className='hidden sm:flex justify-end'>
+            <div className='hidden md:flex justify-end'>
                
                 <div className='bg-black text-white px-4 py-2 rounded-tl-md'>
                     <h1>Beefy Blokes, 2022 | All rights reserved.</h1>
                 </div>
             </div>
-            <div className='flex sm:hidden justify-end mt-8'>
+            <div className='flex md:hidden justify-end mt-8'>
                 <div className='bg-black text-white px-4 py-2 rounded-tl-md'>
                     <h1 style={{fontSize:'14px'}}>Beefy Blokes, 2022 | All rights reserved.</h1>
                 </div>
