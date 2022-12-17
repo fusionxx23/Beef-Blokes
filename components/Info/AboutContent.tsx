@@ -20,11 +20,11 @@ export default function AboutContent() {
                         <Image src={Face} className='2xl:w-28 xl:w-24 lg:w-20 md:w-16 sm:w-12 w-10' alt=''></Image>
                     </div>
                     <p className='font-extrabold'>Beefy Blokes is an array of 1500 NFT’s that embody Aussie culture, with unique Aussie traits.</p>
-                    <p className='mb-4'>What is a Bloke?</p>
-                    <p className='mb-4'>A Bloke is a commonly referred to term in Australia. Often substituted with the word man!</p>
-                    <p className='mb-4'>For example, He’s an Aussie man... sounds weird right? </p>
-                    <p className='mb-4'>But he’s an Aussie Bloke. Well that fits like a glove.</p>
-                    <p className='mb-4'>Your Bloke will range from a Boxing Kangaroo to a Barbeque King. Whatever your Bloke is, it will embody you. 
+                    <p className='mb-14'>What is a Bloke?</p>
+                    <p className='mb-14'>A Bloke is a commonly referred to term in Australia. Often substituted with the word man!</p>
+                    <p className='mb-14'>For example, He’s an Aussie man... sounds weird right? </p>
+                    <p className='mb-14'>But he’s an Aussie Bloke. Well that fits like a glove.</p>
+                    <p className='mb-14'>Your Bloke will range from a Boxing Kangaroo to a Barbeque King. Whatever your Bloke is, it will embody you. 
                                         Some of the traits consist of illuminated glasses, wavy mullet, a bushman’s hat or a fresh meat pie.</p>
             
             </div>
