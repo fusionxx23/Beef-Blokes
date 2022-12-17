@@ -1,12 +1,12 @@
 import FaqsContent from '../components/Info/FaqsContent'
 import Info from '../components/Info/Info'
-import Navbar from '../components/Navbar'
+import Nav from '../components/Nav'
 
 
 export default function Home() {
   return (
     <div className=''>
-      <Navbar bg={true} />
+      <Nav/>
       <Info height={'1519px'}>
         <FaqsContent />
       </Info>

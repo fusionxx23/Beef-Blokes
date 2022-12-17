@@ -5,7 +5,7 @@ import burger from '../public/images/burger.png';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Navbar({bg}: {bg: boolean}) {
+export default function Navbar({bg, setActive}: {bg: boolean, setActive: (b: boolean) => void}) {
     return (
         <div className={`px-2 sm:px-4 xl:px-24 font-sniglet pt-2 flex pb-4 ${bg ? 'bg-white' : ''} justify-between z-10 absolute w-full`} style={{paddingBottom:'14px'}} >
             <div className='flex  sm:ml-0'>
@@ -29,7 +29,7 @@ export default function Navbar({bg}: {bg: boolean}) {
                     <h1 className='text-sm md:text-md sm:text-sm lg:text-lg xl:text-xl text-center whitespace-nowrap'>CONNECT WALLET</h1>
                 </div>
 
-                <div className="sm:hidden ml-2">
+                <div className="sm:hidden ml-2" onClick={() => {setActive(true)}}>
                     <Image src={burger} alt='Navbar Open'></Image>
                 </div>
             </div>

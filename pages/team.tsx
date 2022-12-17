@@ -1,12 +1,11 @@
 import Info from "../components/Info/Info";
 import TeamContent from "../components/Info/TeamContent";
-
-import Navbar from "../components/Navbar";
+import Nav from "../components/Nav";
 
 export default function Team() {
   return (
     <div className="">
-      <Navbar bg={true} />
+      <Nav/>
       <div className='hidden sm:block'>
         <Info height={"920px"}>
           <TeamContent />
