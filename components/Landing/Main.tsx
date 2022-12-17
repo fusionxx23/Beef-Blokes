@@ -6,9 +6,9 @@ import Bg from '../../public/images/Background.png';
 //linear-gradient(180deg, rgba(104, 211, 248, 0) 0%, rgba(215, 245, 255, 0.385) 91.67%, rgba(186, 237, 255, 0.42) 100%)
 export default function Main({ children }: any) {
     return (
-        <div className='absolute z-0 pt-32 top-0 w-full min-h-max' style={{
+        <div className='absolute z-0 pt-32 top-0 w-full min-h-max page-height' style={{
             background: '#e2f7ff', 
-            minHeight:'947px', 
+            height:'100vh'
         }}>
             <div className='w-full hidden relative sm:flex justify-center bg-white' >
                 <Image src={Bg} alt='Background'></Image>
@@ -19,7 +19,7 @@ export default function Main({ children }: any) {
                     <Image src={meatTwo} alt='Background'></Image>
                 </div> */}
             </div>
-            <div className="absolute pt-40 w-full h-full top-0 flex flex-col justify-between">
+            <div className="absolute pt-36 w-full h-full top-0 flex flex-col justify-between">
                 {children}
             </div>
         </div>

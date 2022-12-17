@@ -3,7 +3,7 @@ import React from 'react'
 export default function Footer() {
     return (
         <footer className='font-sniglet'>
-            <div className='px-2 sm:px-40 flex justify-between'>
+            <div className='px-2 sm:px-10 md:px-14 lg:px-40 flex justify-between'>
                 <div>
                     <h1>Your Blake will range from a Boxing Kangaroo to a Barbeque King.</h1>
                     <h1>Whatever your Bloke is, it will embody YOU.</h1>
@@ -14,6 +14,7 @@ export default function Footer() {
                     <StayBeefy/>
                 </div>
             </div>
+            {/* Mobile */}
             <div className='hidden sm:flex justify-end'>
                
                 <div className='bg-black text-white px-4 py-2 rounded-tl-md'>

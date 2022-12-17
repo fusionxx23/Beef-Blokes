@@ -7,9 +7,9 @@ import Link from 'next/link';
 
 export default function Navbar({bg}: {bg: boolean}) {
     return (
-        <div className={`px-4 sm:px-10 xl:px-24 font-sniglet pt-2 flex pb-4 ${bg ? 'bg-white' : ''} justify-between z-10 absolute w-full`} style={{paddingBottom:'14px'}} >
+        <div className={`px-2 sm:px-4 xl:px-24 font-sniglet pt-2 flex pb-4 ${bg ? 'bg-white' : ''} justify-between z-10 absolute w-full`} style={{paddingBottom:'14px'}} >
             <div className='flex  sm:ml-0'>
-                <Link className='hidden sm:block' href="/"><Image  width='115' src={beefLogo} alt='' /></Link>
+                <Link className='hidden sm:block' href="/"><Image style={{minWidth:'115px'}}  width='115' src={beefLogo} alt='' /></Link>
                 <Link className='sm:hidden' href="/"><Image  className='w-14' src={beefLogo} alt='' /></Link>
                 <div className='hidden sm:flex items-center'>
                     <NavLink title={'TEAM'} url={'/team'} />
@@ -21,12 +21,12 @@ export default function Navbar({bg}: {bg: boolean}) {
             </div>
 
             <div className='flex items-center'>
-                <div className='cursor-pointer'>
+                <div className='cursor-pointer sm:hidden md:block'>
                     <Image className='w-8' src={Opensea} alt='' />
                 </div>
 
-                <div className='py-1 px-2 sm:py-2 sm:px-5 border-black border ml-4 rounded-full cursor-pointer' >
-                    <h1 className='text-sm sm:text-xl'>CONNECT WALLET</h1>
+                <div className='py-1 px-2 sm:py-2 sm:px-2 border-black border ml-4 rounded-full cursor-pointer' >
+                    <h1 className='text-sm md:text-md sm:text-sm lg:text-lg xl:text-xl text-center whitespace-nowrap'>CONNECT WALLET</h1>
                 </div>
 
                 <div className="sm:hidden ml-2">
@@ -41,7 +41,7 @@ export default function Navbar({bg}: {bg: boolean}) {
 function NavLink({ title, url }: { title: string, url: string }) {
     return (
         <Link href={`${url}`}>
-            <h1 className='sm:mx-5 xl:mx-9 text-xl'>{title}</h1>
+            <h1 className='sm:mx-5 md:text-md sm:text-sm lg:text-lg xl:text-xl xl:mx-9 '>{title}</h1>
         </Link>
     )
 }

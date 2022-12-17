@@ -6,3 +6,21 @@
     margin: 0;
     padding: 0;
 }
+
+@media (min-width: 1250px) {
+    .page-height {
+        min-height: 850px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .page-height {
+        min-height: 946px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .page-height {
+        min-height: 1050px;
+    }
+}

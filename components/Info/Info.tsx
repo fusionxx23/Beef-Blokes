@@ -19,6 +19,7 @@ export default function Info({ children, height }: {children: any, height: strin
                 backgroundSize:'cover',
                 backgroundPosition: 'center',
                 filter: 'blur(2px)', 
+                marginTop:'73px', 
                 minHeight:height
             }}>
 

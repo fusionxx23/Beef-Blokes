@@ -11,13 +11,13 @@ export default function Home() {
     <div className=''>
       <Navbar bg={true} />
       <Sidebar active={false} />
-      <div className='hidden sm:block'>
+      <div className='hidden md:block'>
         <Main>
           <LandingContent />
           <Footer />
         </Main>
       </div>
-      <div className=' sm:hidden'>
+      <div className=' md:hidden'>
         <MainMobile>
           <LandingContent />
           <Footer />

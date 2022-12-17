@@ -4,11 +4,10 @@ import Image from 'next/image';
 import IconPlus from '../../../public/images/plus.png';
 export default function Mint() {
     return (
-        <div className="absolute top-12 w-full border-r-4 border-l-4 border-b-4 border-t-0 rounded-br-3xl rounded-bl-3xl  border-black ">
-            <div className="mt-16 flex justify-around font-normal px-10">
-
-                <div className='flex flex-col items-center'>
-                    <h1 style={{ fontSize: '28px' }} className='text-black text-xl mb-3'>Amount</h1>
+        <div className="absolute md:top-0 lg:top-7 2xl:top-12 w-full lg:border-r-4 lg:border-l-4 lg:border-b-4 border-t-0 rounded-br-3xl rounded-bl-3xl  border-black ">
+            <div className=" md:mt-12 xl:mt-16 flex justify-around font-normal px-10">
+                <div className='flex flex-col items-center '>
+                    <h1 className='text-black xl:text-lg  2xl:text-xl mb-3' style={{height:'28px'}}>Amount</h1>
                     <div className='bg-black px-4 rounded-tr-full rounded-tl-full' >
                         <h1>0.1ETH</h1>
                     </div>
@@ -20,7 +19,7 @@ export default function Mint() {
                             <Image src={IconMinus} alt='Bloke NFT' />
                         </div>
 
-                        <h1 className='mx-4 text-black text-xl' style={{ fontSize: '28px' }}>2</h1>
+                        <h1 className='mx-4 text-black text-xl xl:text-lg  2xl:text-xl' >2</h1>
                         <div className='w-7'>
                             <Image src={IconPlus} alt='Bloke NFT' />
                         </div>
