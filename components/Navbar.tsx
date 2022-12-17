@@ -10,9 +10,9 @@ export default function Navbar({ bg, setActive }: { bg: boolean, setActive: (b: 
     return (
         <div className={`px-2 sm:px-4 xl:px-24 font-sniglet pt-2 flex pb-4 ${bg ? 'bg-white' : ''} justify-between z-10 absolute w-full`} style={{ paddingBottom: '14px' }} >
             <div className='flex  sm:ml-0'>
-                <Link className='hidden sm:block' href="/"><Image style={{ minWidth: '115px' }} width='115' src={beefLogo} alt='' /></Link>
-                <Link className='sm:hidden' href="/"><Image className='w-14' src={beefLogo} alt='' /></Link>
-                <div className='hidden sm:flex items-center'>
+                <Link className='hidden md:block' href="/"><Image style={{ minWidth: '115px' }} width='115' src={beefLogo} alt='' /></Link>
+                <Link className='md:hidden' href="/"><Image className='w-14' src={beefLogo} alt='' /></Link>
+                <div className=' hidden sm:flex items-center'>
                     <NavLink title={'TEAM'} url={'/team'} />
                     <NavLink title={`FAQ's`} url={'/faqs'} />
                     <NavLink title={'ABOUT US'} url={'/about'} />
