@@ -33,9 +33,9 @@ export default function TeamContent() {
 
 function MemberCard({src, name, title, desc}: {src: StaticImageData, name: string, title: string, desc:string}) {
   return (
-    <div className='md:mx-3 lg:mx-10 text-center text-black cursor-pointer'>
-      <Image className='hidden sm:block sm:w-40 md:w-56 lg:w-64 xl:w-80 2xl:w-96' src={src} alt={'member card'}></Image>
-      <Image className='sm:hidden' src={src} style={{width:'400px'}} alt={'member card'}></Image>
+    <div  className=' my-8 sm:mb-0 md:mx-3 lg:mx-10 text-center text-black cursor-pointer'>
+      <Image className='hidden  sm:block sm:w-40 md:w-56 lg:w-64 xl:w-80 2xl:w-96' src={src} alt={'member card'}></Image>
+      <Image className=' sm:hidden' src={src} style={{width:'300px'}} alt={'member card'}></Image>
       <h1 style={{fontSize:'32px'}}>{name}</h1>
       <h1 className='font-extrabold'>{title}</h1>
       <h2>{desc}</h2>
