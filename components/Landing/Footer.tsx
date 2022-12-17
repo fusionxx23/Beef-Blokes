@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <div className='font-sniglet'>
+        <footer className='font-sniglet'>
             <div className='px-2 sm:px-40 flex justify-between'>
                 <div>
                     <h1>Your Blake will range from a Boxing Kangaroo to a Barbeque King.</h1>
@@ -25,7 +25,7 @@ export default function Footer() {
                     <h1 style={{fontSize:'14px'}}>Beefy Blokes, 2022 | All rights reserved.</h1>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
 

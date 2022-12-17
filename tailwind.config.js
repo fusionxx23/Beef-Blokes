@@ -5,7 +5,12 @@ module.exports = {
         "./components/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
-        extend: {},
+        extend: {
+            spacing: {
+                '128': '32rem',
+                '160': '40rem'
+            }
+        },
         fontFamily: {
             "sniglet": ["'Sniglet'", 'cursive']
         }

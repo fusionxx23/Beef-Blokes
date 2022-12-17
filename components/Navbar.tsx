@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export default function Navbar({bg}: {bg: boolean}) {
     return (
-        <div className={`px-4 sm:px-10 xl:px-24 font-sniglet pt-2 flex ${bg ? 'bg-white' : ''} justify-between z-10 absolute w-full`} >
+        <div className={`px-4 sm:px-10 xl:px-24 font-sniglet pt-2 flex pb-4 ${bg ? 'bg-white' : ''} justify-between z-10 absolute w-full`} style={{paddingBottom:'14px'}} >
             <div className='flex  sm:ml-0'>
                 <Link className='hidden sm:block' href="/"><Image  width='115' src={beefLogo} alt='' /></Link>
                 <Link className='sm:hidden' href="/"><Image  className='w-14' src={beefLogo} alt='' /></Link>

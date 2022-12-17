@@ -9,7 +9,7 @@ import Sidebar from '../components/Sidebar'
 export default function Home() {
   return (
     <div className=''>
-      <Navbar bg={false} />
+      <Navbar bg={true} />
       <Sidebar active={false} />
       <div className='hidden sm:block'>
         <Main>
