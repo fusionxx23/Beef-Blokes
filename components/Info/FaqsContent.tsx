@@ -34,9 +34,9 @@ function FAQ({ title }: { title: string }) {
         setOpen(!open); 
     }
     return (
-        <div className='border-t border-black py-2 md:py-4'>
+        <div className='border-t border-black py-3 md:py-4'>
             <div onClick={() => { toggle() }} className='flex justify-between items-center cursor-pointer'>
-                <h1  className='font-extrabold 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl text-xl'>{title}?</h1>
+                <h1  className='font-extrabold 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl text-2xl'>{title}?</h1>
                 {!open && <Image src={plus} alt={'plus text'}></Image>}
                 {open && <Image src={minus} alt={'minus'}></Image>}
             </div>
