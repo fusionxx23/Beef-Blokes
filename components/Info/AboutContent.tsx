@@ -19,7 +19,7 @@ export default function AboutContent() {
                     <div className="absolute -top-5 -left-5   lg:-top-10 lg:-left-10">
                         <Image src={Face} className='2xl:w-28 xl:w-24 lg:w-20 md:w-16 sm:w-12 w-10' alt=''></Image>
                     </div>
-                    <p className='font-extrabold'>Beefy Blokes is an array of 1500 NFT’s that embody Aussie culture, with unique Aussie traits.</p>
+                    <p className='font-extrabold mb-6'>Beefy Blokes is an array of 1500 NFT’s that embody Aussie culture, with unique Aussie traits.</p>
                     <p className='mb-14'>What is a Bloke?</p>
                     <p className='mb-14'>A Bloke is a commonly referred to term in Australia. Often substituted with the word man!</p>
                     <p className='mb-14'>For example, He’s an Aussie man... sounds weird right? </p>
