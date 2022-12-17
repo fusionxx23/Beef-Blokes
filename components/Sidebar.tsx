@@ -3,6 +3,7 @@ import logo from '../public/images/BEEFY-Logo 1.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import vec from '../public/images/vec.png'; 
+import { useRouter } from 'next/router';
 export default function Sidebar({ active, setActive }: { active: boolean, setActive: (b: boolean) => void }) {
 
     return (
@@ -20,9 +21,9 @@ export default function Sidebar({ active, setActive }: { active: boolean, setAct
                     <h1 className='ml-2 font-bold text-2xl'>Beefy Blokes</h1>
                 </div>
                 <div className='font-sniglet'>
-                    <MobileLink title={'TEAM'} url={'/team'} active={true}/>
-                    <MobileLink title={'FAQs'} url={'/faqs'} active={false}/>
-                    <MobileLink title={'ABOUT'} url={'/about'} active={false}/>
+                    <MobileLink title={'TEAM'} url={'/team'}/>
+                    <MobileLink title={'FAQs'} url={'/faqs'} />
+                    <MobileLink title={'ABOUT'} url={'/about'} />
                 </div>
 
             </div>
@@ -30,7 +31,13 @@ export default function Sidebar({ active, setActive }: { active: boolean, setAct
     )
 }
 
-function MobileLink({title, url, active}: {title: string, url: string, active: boolean}) {
+function MobileLink({title, url}: {title: string, url: string}) {
+    const router = useRouter(); 
+    console.log(router.pathname); 
+    let active = false; 
+    if(url === router.pathname){
+        active = true; 
+    }
     return (
         <Link href={url}>
             <div className={`${active ? 'bg-white' : ''} pl-2 mr-4 py-3 rounded-lg`} style={{ marginBottom: '24px', fontSize:'18px' }}>
