@@ -16,8 +16,8 @@ export default function Navbar({ bg, setActive }: { bg: boolean, setActive: (b: 
                     <NavLink title={'TEAM'} url={'/team'} />
                     <NavLink title={`FAQ's`} url={'/faqs'} />
                     <NavLink title={'ABOUT US'} url={'/about'} />
-                    <NavLink title={'TWITTER'} url={'/'} />
-                    <NavLink title={'DISCORD'} url={'/'} />
+                    <NavLink title={'TWITTER'} url={'/twitter'} />
+                    <NavLink title={'DISCORD'} url={'/discord'} />
                 </div>
             </div>
 
