@@ -11,7 +11,7 @@ export default function FaqsContent() {
             </div>
             <div className='relative inline-block'>
                 <h1 className='font-extrabold text-white text-6xl lg:text-6xl xl:text-8xl 2xl:text-9xl'>ANSWERED</h1>
-                <h2 className='absolute right-0 -top-10 lg:text-xl md:text-lg xl:text-2xl 2xl:text-3xl text-white' >your questions</h2>
+                <h2 className='absolute right-0 -top-10 lg:text-xl md:text-lg xl:text-2xl 2xl:text-3xl text-white' >your questions,</h2>
             </div>
 
 
@@ -28,12 +28,15 @@ export default function FaqsContent() {
 
 function FAQ({ title }: { title: string }) {
     const [open, setOpen] = useState(false);
+    const toggle = () => {
+        setOpen(!open); 
+    }
     return (
         <div className='border-t border-black py-4'>
-            <div className='flex justify-between items-center'>
+            <div onClick={() => { toggle() }} className='flex justify-between items-center'>
                 <h1  className='font-extrabold 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl text-xl'>{title}?</h1>
-                {!open && <h1 onClick={() => { setOpen(true) }} style={{ fontSize: '45px' }} className={'cursor-pointer'} >+</h1>}
-                {open && <h1 onClick={() => { setOpen(false) }} style={{ fontSize: '45px' }} className={'cursor-pointer'} >x</h1>}
+                {!open && <h1  style={{ fontSize: '45px' }} className={'cursor-pointer'} >+</h1>}
+                {open && <h1  style={{ fontSize: '45px' }} className={'cursor-pointer'} >x</h1>}
             </div>
 
 

@@ -10,7 +10,7 @@ export default function Info({ children, height }: {children: any, height: strin
                 backgroundImage: `url(${Bg.src})`,
                 backgroundSize:'cover',
                 backgroundPosition: 'center',
-                filter: 'blur(2px)', 
+               
                 minHeight:height
             }}>
             </div>
@@ -18,7 +18,7 @@ export default function Info({ children, height }: {children: any, height: strin
                 backgroundImage: `url(${MobileBg.src})`,
                 backgroundSize:'cover',
                 backgroundPosition: 'center',
-                filter: 'blur(2px)', 
+               
                 marginTop:'73px', 
                 minHeight:height
             }}>
