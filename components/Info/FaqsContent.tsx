@@ -2,14 +2,18 @@ import React, { useState } from 'react'
 
 export default function FaqsContent() {
     return (
-        <div className='px-56 font-sniglet mt-20 max-h-screen'>
-            <div className='flex justify-between' style={{ width: '723px' }}>
-                <div className="bg-black text-white font-extrabold py-1 px-3 rounded-xl" style={{ fontSize: '33px' }}>
+        <div className='px-4 lg:px-32  xl:px-56 font-sniglet mt-20 max-h-screen'>
+            <div className='flex justify-between'>
+                <div className="bg-black text-white font-extrabold py-1 px-3 rounded-xl lg:text-xl md:text-lg xl:text-2xl 2xl:text-3xl">
                     FAQ&apos;s
                 </div>
-                <h2 style={{ fontSize: '33px' }} >your questions</h2>
+              
             </div>
-            <h1 style={{ fontSize: '122px' }} className='font-extrabold text-white'>ANSWERED</h1>
+            <div className='relative inline-block'>
+                <h1 className='font-extrabold text-white text-6xl lg:text-6xl xl:text-8xl 2xl:text-9xl'>ANSWERED</h1>
+                <h2 className='absolute right-0 -top-10 lg:text-xl md:text-lg xl:text-2xl 2xl:text-3xl text-white' >your questions</h2>
+            </div>
+
 
             <div className='overflow-auto' style={{}}>
                 <FAQ title={'PURPOSE'} />
@@ -22,18 +26,18 @@ export default function FaqsContent() {
 }
 
 
-function FAQ({title}: {title: string}) {
+function FAQ({ title }: { title: string }) {
     const [open, setOpen] = useState(false);
     return (
         <div className='border-t border-black py-4'>
             <div className='flex justify-between'>
-                <h1 style={{ fontSize: '45px' }} className='font-extrabold'>{title}?</h1>
-                {!open && <h1 onClick={() => {setOpen(true)}} style={{ fontSize: '45px' }} className={'cursor-pointer'} >+</h1>}
-                {open && <h1 onClick={() => {setOpen(false)}} style={{ fontSize: '45px' }} className={'cursor-pointer'} >x</h1>}
+                <h1  className='font-extrabold 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl text-xl'>{title}?</h1>
+                {!open && <h1 onClick={() => { setOpen(true) }} style={{ fontSize: '45px' }} className={'cursor-pointer'} >+</h1>}
+                {open && <h1 onClick={() => { setOpen(false) }} style={{ fontSize: '45px' }} className={'cursor-pointer'} >x</h1>}
             </div>
 
 
-            {open && <p style={{ fontSize: '28px' }}>Our purpose is to bring together a community that encourages, motivates and supports holders.
+            {open && <p className='xl:text-xl 2xl:text-2xl'>Our purpose is to bring together a community that encourages, motivates and supports holders.
                 At Beefy Blokes we want our holders of our NFT to think of it as a membership to an exclusive community
                 of like-minded individuals, who are all committed to helping each other.
 

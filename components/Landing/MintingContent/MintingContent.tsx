@@ -13,7 +13,7 @@ export default function MintingContent() {
                     <h1 className=' lg:text-3xl xl:text-4xl 2xl:text-5xl'>MINT</h1>
                     <Mint />
                 </div>
-                <h1 className='pt-2 sm:mt-4 md:mt-20 sm:text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl'>1323 / 1500</h1>
+                <h1 className='lg:pt-2 sm:mt-4 md:mt-20 sm:text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl'>1323 / 1500</h1>
                 <h2>BEEFY BLOKES MINTED</h2>
             </div>
             {/* Mobile */}
