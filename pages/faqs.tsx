@@ -9,7 +9,7 @@ export default function Faqs() {
     <div className=''>
       <Nav/>
       <div className='hidden sm:block'>
-        <Info height={"1519px"}>
+        <Info height={"1512px"}>
           <FaqsContent></FaqsContent>
         </Info>
       </div>
