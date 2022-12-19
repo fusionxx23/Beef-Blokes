@@ -19,14 +19,12 @@ export default function Main({ children }: any) {
                 <div className="absolute left-3 bottom-0">
                     <Image src={meatTwo} alt='Background'></Image>
                 </div> */}
-                <div className="absolute w-full h-full top-0 flex flex-col justify-center">
+                <div className="absolute w-full h-full top-0 flex flex-col justify-center z-10">
                     {children}
                 </div>
             </div>
             <div className="absolute w-full h-full top-0 flex flex-col justify-between">
-                <div>
-                    
-                </div>
+                <div></div>
                 <Footer></Footer>
             </div>
 
