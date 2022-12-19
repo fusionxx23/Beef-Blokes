@@ -8,21 +8,24 @@ import Footer from './Footer';
 export default function Main({ children }: any) {
     return (
         <div className='absolute z-0 pt-32 top-0 w-full min-h-max page-height' style={{
-            background: '#eefafe',
+            background: '',
             height: '100vh'
         }}>
-            <div className='w-full hidden relative sm:flex justify-center bg-white' >
-                <Image src={Bg} alt='Background'></Image>
-                {/* <div className="absolute bottom-20 right-3">
+            <div className='h-full flex pb-32 md:items-center lg:items-start'>
+                <div className='w-full hidden relative sm:flex justify-center bg-white' >
+                    <Image src={Bg} alt='Background'></Image>
+                    {/* <div className="absolute bottom-20 right-3">
                     <Image src={meatOne} alt='Background'></Image>
                 </div>
                 <div className="absolute left-3 bottom-0">
                     <Image src={meatTwo} alt='Background'></Image>
                 </div> */}
-                <div className="absolute w-full h-full top-0 flex flex-col justify-center z-10">
-                    {children}
+                    <div className="absolute w-full h-full top-0 flex flex-col justify-center z-10">
+                        {children}
+                    </div>
                 </div>
             </div>
+
             <div className="absolute w-full h-full top-0 flex flex-col justify-between">
                 <div></div>
                 <Footer></Footer>
