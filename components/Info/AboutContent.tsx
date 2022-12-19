@@ -1,6 +1,11 @@
 import React from 'react'
 import Image from 'next/image';
 import Face from '../../public/images/face.png'
+import Card1 from '../../public/images/card.png'
+import Card2 from '../../public/images/card2.png'
+import Card3 from '../../public/images/card3.png'
+import Card4 from '../../public/images/card4.png'
+import Card5 from '../../public/images/card5.png'
 import Card from './Card';
 
 let textResponsive = 'sm:text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl'
@@ -29,11 +34,11 @@ export default function AboutContent() {
             
             </div>
             <div className='flex justify-around w-full mt-5 overflow-hidden ' style={{width:'1500px'}} >
-                    <Card marginTop={'10px'}/>
-                    <Card marginTop={'100px'}/>
-                    <Card marginTop={'5px'}/>
-                    <Card marginTop={'90px'}/>
-                    <Card marginTop={'5px'}/>
+                    <Card marginTop={'10px'} img={Card1}/>
+                    <Card marginTop={'100px'} img={Card2}/>
+                    <Card marginTop={'5px'} img={Card3}/>
+                    <Card marginTop={'90px'} img={Card4}/>
+                    <Card marginTop={'5px'} img={Card5}/>
             </div>
         </div>
             
