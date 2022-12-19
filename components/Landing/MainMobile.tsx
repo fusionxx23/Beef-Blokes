@@ -9,8 +9,8 @@ export default function MainMobile({ children }: any) {
             minHeight:'940px',
             height: '100vh'
         }}>
-           <div className='w-full relative flex justify-center pt-6'   >
-                <Image src={Bg} alt='Background' className='rounded-xl' ></Image>
+           <div className='w-full relative  flex justify-center pt-6'   >
+                <Image src={Bg} alt='Background' className='rounded-2xl'  ></Image>
                 {/* <div className="absolute bottom-20 right-3">
                     <Image src={meatOne} alt='Background'></Image>
                 </div>

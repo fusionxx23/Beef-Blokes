@@ -5,8 +5,10 @@ import burger from '../public/images/burger.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import useWeb3Provider from '../libs/web3';
 
 export default function Navbar({ bg, setActive }: { bg: boolean, setActive: (b: boolean) => void }) {
+    const { connect, address } = useWeb3Provider();
     return (
         <div className={`px-2 sm:px-4 xl:px-24 font-sniglet pt-2 flex pb-4 ${bg ? 'bg-white' : ''} justify-between z-10 absolute w-full`} style={{ paddingBottom: '14px' }} >
             <div className='flex  sm:ml-0'>
@@ -27,7 +29,12 @@ export default function Navbar({ bg, setActive }: { bg: boolean, setActive: (b: 
                 </div>
 
                 <div className='py-1 px-2 sm:py-2 sm:px-2 border-black border ml-4 rounded-full cursor-pointer' >
-                    <h1 className='text-sm md:text-md sm:text-sm lg:text-lg xl:text-xl text-center whitespace-nowrap'>CONNECT WALLET</h1>
+                    <h1 className='text-sm md:text-md sm:text-sm lg:text-lg xl:text-xl text-center whitespace-nowrap'
+                        onClick={() => { connect(); }}>
+                        {address ?
+                            address.slice(0, 4) + address.slice(address.length - 4, address.length) + '...'
+                            : 'CONNECT WALLET'}
+                    </h1>
                 </div>
 
                 <div className="sm:hidden ml-2" onClick={() => { setActive(true) }}>
@@ -41,16 +48,16 @@ export default function Navbar({ bg, setActive }: { bg: boolean, setActive: (b: 
 
 function NavLink({ title, url }: { title: string, url: string }) {
     const router = useRouter();
-    let active = false; 
-    if(url == router.pathname) {
-        active = true; 
+    let active = false;
+    if (url == router.pathname) {
+        active = true;
     }
     return (
         <Link href={`${url}`}>
             <div className=''>
                 <h1 className='sm:mx-5 md:text-md sm:text-sm lg:text-lg xl:text-xl xl:mx-9'>{title}</h1>
                 <div className="flex justify-center">
-                    <div className={`border-b-2 ${ active ? '' : 'border-opacity-0'} w-10 border-black`}></div>
+                    <div className={`border-b-2 ${active ? '' : 'border-opacity-0'} w-10 border-black`}></div>
                 </div>
             </div>
 
