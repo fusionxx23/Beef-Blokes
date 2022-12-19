@@ -14,7 +14,6 @@ export default function Home() {
       <div className='hidden md:block'>
         <Main>
           <LandingContent />
-       
         </Main>
       </div>
       <div className=' md:hidden'>
