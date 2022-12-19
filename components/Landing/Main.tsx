@@ -13,7 +13,7 @@ export default function Main({ children }: any) {
         }}>
             <div className='h-full flex pb-32 md:items-center xl:items-start'>
                 <div className='w-full hidden relative md:flex justify-center bg-white' >
-                    <div className='overflow-hidden flex justify-center mb-10' >
+                    <div className='overflow-hidden flex justify-center md:mb-10 xl:mb-0' >
                         <Image src={Bg} style={{ minWidth: '1300px' }} alt='Background'></Image>
                     </div>
 

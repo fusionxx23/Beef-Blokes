@@ -8,7 +8,7 @@ export default function MintingContent() {
     return (
         <section>
             <div className='hidden md:flex flex-col items-center h-full font-sniglet'>
-                <Image src={MintImg} className='sm:w-40 md:w-32 lg:w-56 xl:w-80 2xl:w-96' alt='Bloke NFT' />
+                <Image src={MintImg} className='sm:w-40 md:w-32 lg:w-52 xl:w-64 2xl:w-80' alt='Bloke NFT' />
                 <div className={s + ' sm:h-8 md:h-10 md:w-72 lg:h-16 lg:w-104 xl:w-112 xl:h-20 2xl:w-120 2xl:h-24 '} >
                     <h1 className=' lg:text-3xl xl:text-4xl 2xl:text-5xl'>MINT</h1>
                     <Mint />
