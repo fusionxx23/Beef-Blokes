@@ -9,8 +9,8 @@ const btnResponsiveW = 'sm:w-60 md:w-64 lg:w-72 xl:w-80 2xl:w-96'
 export default function LandingContent() {
     return (
         <section>
-            <div className='hidden sm:flex flex-col items-center h-full font-sniglet '>
-                <Image src={Wordmark} alt='Wordmark' className='sm:w-64 md:w-72 lg:w-96 xl:w-128 2xl:w-160  mb-10' />
+            <div className='hidden sm:flex flex-col items-center h-full font-sniglet'>
+                <Image src={Wordmark} alt='Wordmark' className='sm:w-64 md:w-72 lg:w-96 xl:w-128 2xl:w-160 mb-10' />
                 <h1 className={`text-white font-sniglet ${textResponsive}`}>
                     1500 NFT&apos;s that embody Aussie culture, with unique Aussie traits.
                 </h1>
@@ -26,7 +26,7 @@ export default function LandingContent() {
             </div>
 
             {/*  Mobile */}
-            <div className='sm:hidden flex flex-col items-center h-full font-sniglet mt-6 px-4 '>
+            <div className='sm:hidden flex flex-col items-center h-full font-sniglet mt-20 px-4 '>
                 <Image src={Wordmark} width='324' alt='Wordmark' />
                 <h1 className='font-sniglet text-white text-center'
                     style={{ fontSize: '18px', width: '310px' }}>
