@@ -1,5 +1,4 @@
 import { Web3ProviderState, Web3Action } from "./types"
-import { web3InitialState } from "./Web3Provider"
 
 export function web3Reducer(
     state: Web3ProviderState,
@@ -25,7 +24,7 @@ export function web3Reducer(
           network: action.network,
         }
       case 'RESET_WEB3_PROVIDER':
-        return web3InitialState
+        return {provider: null, web3Provider: null, address: null, network: null}
       default:
         throw new Error()
     }

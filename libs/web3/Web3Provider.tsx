@@ -20,7 +20,7 @@ const Web3Provider = ({ children }: any) => {
         network: null,
     }
     const [state, dispatch] = useReducer(web3Reducer, web3InitialState)
-    const { provider, web3Provider, address, network } = state
+    const { provider } = state
 
     const connect = useCallback(async () => {
         if (web3Modal) {
