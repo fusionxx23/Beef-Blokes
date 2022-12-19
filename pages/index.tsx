@@ -14,12 +14,13 @@ export default function Home() {
       <div className='hidden md:block'>
         <Main>
           <LandingContent />
-          <Footer />
+       
         </Main>
       </div>
       <div className=' md:hidden'>
         <MainMobile>
           <LandingContent />
+          <Footer />
         </MainMobile>
       </div>
 
