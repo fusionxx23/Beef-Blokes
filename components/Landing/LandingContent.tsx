@@ -10,7 +10,7 @@ export default function LandingContent() {
     return (
         <section>
             <div className='hidden md:flex flex-col items-center h-full font-sniglet'>
-                <Image src={Wordmark} alt='Wordmark' className='sm:w-64 md:w-72 lg:w-96 xl:w-128 2xl:w-160 mb-10' />
+                <Image src={Wordmark} alt='Wordmark' className='sm:w-64 md:w-72 lg:w-96 xl:w-120 2xl:w-128 mb-10' />
                 <h1 className={`text-white font-sniglet ${textResponsive}`}>
                     1500 NFT&apos;s that embody Aussie culture, with unique Aussie traits.
                 </h1>

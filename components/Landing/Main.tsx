@@ -11,9 +11,12 @@ export default function Main({ children }: any) {
             background: '',
             height: '100vh'
         }}>
-            <div className='h-full flex pb-32 md:items-center lg:items-start'>
-                <div className='w-full hidden relative sm:flex justify-center bg-white' >
-                    <Image src={Bg} alt='Background'></Image>
+            <div className='h-full flex pb-32 md:items-center xl:items-start'>
+                <div className='w-full hidden relative md:flex justify-center bg-white' >
+                    <div className='overflow-hidden flex justify-center mb-10' >
+                        <Image src={Bg} style={{ minWidth: '1300px' }} alt='Background'></Image>
+                    </div>
+
                     {/* <div className="absolute bottom-20 right-3">
                     <Image src={meatOne} alt='Background'></Image>
                 </div>
