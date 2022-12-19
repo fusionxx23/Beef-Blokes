@@ -15,13 +15,13 @@
 
 @media (min-width: 1500px) {
     .page-height {
-        min-height: 946px;
+        min-height: 850px;
     }
 }
 
 @media (min-width: 1800px) {
     .page-height {
-        min-height: 1050px;
+        min-height: 940px;
     }
 }
 
