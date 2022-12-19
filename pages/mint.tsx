@@ -13,7 +13,7 @@ export default function Mint() {
         <div className='hidden md:block'>
         <Main>
           <MintingContent/>
-          <Footer />
+
         </Main>
       </div>
       <div className='md:hidden'>
