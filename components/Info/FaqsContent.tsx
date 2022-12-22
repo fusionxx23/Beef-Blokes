@@ -4,7 +4,7 @@ import plus from '../../public/images/plusText.png';
 import minus from '../../public/images/minusText.png'; 
 export default function FaqsContent() {
     return (
-        <div className='px-4 lg:px-32  xl:px-56 font-sniglet mt-20 max-h-screen'>
+        <div className='px-4 lg:px-32 xl:px-56 font-sniglet mt-20'>
             <div className='flex justify-between'>
                 <div className="bg-black text-white font-extrabold py-1 px-3 rounded-xl lg:text-xl md:text-lg xl:text-2xl 2xl:text-3xl">
                     FAQ&apos;s

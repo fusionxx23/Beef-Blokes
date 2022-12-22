@@ -10,7 +10,7 @@ export default function Info({ children, height }: { children: any, height: stri
                 backgroundImage: `url(${Bg.src})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                minHeight: height
+                backgroundAttachment: 'fixed', 
             }}>
                 <div style={{fontSize:'22px'}} className="absolute bottom-0 right-0 bg-white bg-opacity-40 px-2 py-1 rounded-tl-md font-sniglet">
                     <h1>Beef Blokes, 2022 | All rights reserved.</h1>
@@ -27,7 +27,7 @@ export default function Info({ children, height }: { children: any, height: stri
                     <h1>Beef Blokes, 2022 | All rights reserved.</h1>
                 </div>
             </div>
-            <div className="absolute top-0 w-full" style={{ paddingTop: '110px' }}>
+            <div className="absolute top-0 w-full overflow-y-auto max-h-screen" style={{ paddingTop: '110px' }}>
                 {children}
             </div>
         </div>
